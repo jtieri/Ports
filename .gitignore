@@ -24,3 +24,6 @@ hs_err_pid*
 
 # IntelliJ Output Directory
 .idea/*
+
+# Compiled Outputs
+target
