@@ -22,7 +22,7 @@ public class Scan {
                 System.out.println("Port: " + i + " is open.");
                 sock.close();
             } catch(IOException e) {
-                System.out.println("Error due to: " + e.getCause());
+                System.out.println("Port: " + i + " is closed.");
             }
         }
     }
