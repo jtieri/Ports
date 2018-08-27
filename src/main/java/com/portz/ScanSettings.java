@@ -28,7 +28,6 @@ public class ScanSettings {
             tempPort = Integer.parseInt(keyboard.nextLine());
         } while(! PortUtils.isValidPort(tempPort));
 
-        keyboard.close();
         return tempPort;
     }
 
@@ -41,7 +40,6 @@ public class ScanSettings {
             tempPort = Integer.parseInt(keyboard.nextLine());
         } while(! PortUtils.isValidPort(tempPort));
 
-        keyboard.close();
         return tempPort;
     }
 
@@ -52,7 +50,7 @@ public class ScanSettings {
         do {
             System.out.println("Enter the IP or domain of the machine you want to scan.");
             tempIP = keyboard.nextLine().trim();
-        } while (! tempIP.equals(" "));
+        } while (tempIP.equals(" "));
 
         keyboard.close();
         return tempIP;
