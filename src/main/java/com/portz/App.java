@@ -1,5 +1,8 @@
 package com.portz;
 
+import com.portz.scan.Scan;
+import com.portz.scan.ScanSettings;
+
 /**
  * Entry point into the application. Includes the main method which bootstraps/runs the application.
  */
