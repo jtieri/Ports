@@ -1,4 +1,6 @@
-package com.portz;
+package com.portz.scan;
+
+import com.portz.PortUtils;
 
 import java.util.Scanner;
 
@@ -58,15 +60,15 @@ public class ScanSettings {
 
     // Accessors
 
-    public int getStartPort() {
+    int getStartPort() {
         return this.startPort;
     }
 
-    public int getEndPort() {
+    int getEndPort() {
         return this.endPort;
     }
 
-    public String getHost() {
+    String getHost() {
         return this.host;
     }
 }

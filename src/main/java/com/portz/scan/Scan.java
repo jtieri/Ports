@@ -1,11 +1,11 @@
-package com.portz;
+package com.portz.scan;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 
 public class Scan {
-    private final int TIMEOUT = 200; // the timeout value to be used in milliseconds.
+    private final int TIMEOUT = 200; // the connection timeout value to be used in milliseconds.
 
     private final ScanSettings scanSettings;
 
