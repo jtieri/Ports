@@ -1,10 +1,15 @@
 package com.portz.scan;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
 
 public class Scan {
+    private final static Logger logger = LoggerFactory.getLogger(Scan.class);
+
     private final int TIMEOUT = 200; // the connection timeout value to be used in milliseconds.
 
     private final ScanSettings scanSettings;
@@ -24,9 +29,9 @@ public class Scan {
                 sock.connect(new InetSocketAddress(scanSettings.getHost(), i), TIMEOUT);
                 sock.close();
 
-                System.out.println("Port: " + i + " is open.");
+                logger.info("Port: " + i + " is open.");
             } catch(IOException e) {
-                System.out.println("Port: " + i + " is closed.");
+                logger.info("Port: " + i + " is closed.");
             }
         }
     }
